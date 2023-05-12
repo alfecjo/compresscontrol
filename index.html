@@ -7,12 +7,12 @@
     <title>Document</title>
   </head>
   <body>
-    <input type="text" name="caixa-texto" id="caixa-texto" />
-
+    <label for="caixa_texto">Name:</label>
+    <input type="text" id="caixa_texto" />
     <script>
-      let elemento = document.querySelector("#caixa-texto");
+      let elemento = document.querySelector("#caixa_texto");
       elemento.addEventListener("keydown", (evento) => {
-        console.log(evento.code);
+        console.log(evento.which)
       });
     </script>
   </body>
